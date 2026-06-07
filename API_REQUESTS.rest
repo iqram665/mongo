@@ -1,0 +1,45 @@
+### GET All Users
+GET http://localhost:5000/api/users
+Accept: application/json
+
+###
+
+### GET User by ID
+GET http://localhost:5000/api/users/USER_ID_HERE
+Accept: application/json
+
+###
+
+### CREATE New User
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "age": 25,
+  "city": "New York"
+}
+
+###
+
+### UPDATE User
+PUT http://localhost:5000/api/users/USER_ID_HERE
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "age": 26,
+  "city": "Boston"
+}
+
+###
+
+### DELETE User
+DELETE http://localhost:5000/api/users/USER_ID_HERE
+
+###
+
+### Health Check
+GET http://localhost:5000/api/health
+Accept: application/json
